@@ -1,0 +1,81 @@
+
+@keyframes popup {
+    0% {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.wb-min ,.wb-full,.wb-close,.wb-max  {
+    background-color:black
+}
+.wb-min {
+    background-color:black
+}
+
+
+
+.winbox.modern {
+    background: linear-gradient(90deg, #ffce48, #0050ff);
+    border-radius: 12px 12px 0 0;
+    animation: popup 0.3s cubic-bezier(0.3, 1, 0.3, 1) forwards;
+  
+}
+.winbox.modern:not(.min, .focus) {
+    background: #666;
+}
+@media (hover: hover) {
+    .winbox.modern.min:not(:hover) {
+        background: #666;
+    }
+    .winbox.modern .wb-control * {
+        opacity: 0.05;
+    }
+    .winbox.modern .wb-control :hover {
+        opacity: 1;
+    }
+}
+@media (hover: none) {
+    .winbox.modern.min {
+        background: #666;
+    }
+}
+
+
+.winbox.modern.max {
+    border-radius: 0;
+}
+.winbox.modern .wb-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000000;
+}
+.wb-max {
+    color: #000000;
+}
+.winbox.modern .wb-body {
+    margin: 0px;
+    top: 0px;
+    color: #fff;
+    background: #ffffff;
+ 
+}
+.winbox.modern .wb-body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+.winbox.modern .wb-body::-webkit-scrollbar-track {
+    background: 0 0;
+}
+.winbox.modern .wb-body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #263040;
+}
+.winbox.modern .wb-body::-webkit-scrollbar-thumb:window-inactive {
+    background: #181f2a;
+}
+.winbox.modern .wb-body::-webkit-scrollbar-corner {
+    background: 0 0;
+}

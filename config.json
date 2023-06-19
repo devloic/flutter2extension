@@ -1,0 +1,45 @@
+{
+    "project":
+        [{
+            "pubspec_path": "/Users/lolo/development/project_contest/wonderous/pubspec.yaml",
+            "target":[""],
+            "presentation":["winbox"],
+            "id":"wonders",
+            "name":"Wonderous"
+        },{
+            "pubspec_path": "/Users/lolo/development/project_contest/almostnetflixprojectsetup/pubspec.yaml",
+            "target":[""],
+            "presentation":["winbox"],
+            "id":"netflix",
+            "name":"netflix"
+        },{
+            "pubspec_path": "/Users/lolo/development/project_contest/gallery/pubspec.yaml",
+            "target":[""],
+            "presentation":["sidebar"],
+            "id":"gallery",
+            "name":"gallery"
+        },
+        
+         {
+            "pubspec_path": "/Users/lolo/development/project_contest/hello/pubspec.yaml",
+            "target":[""],
+            "presentation":["sidebar"],
+            "id":"hello",
+            "name":"hello"
+        },{
+            "pubspec_path": "/Users/lolo/development/project_contest/totoweb/pubspec.yaml",
+            "target":[],
+            "id":"totoweb",
+            "name":"totoweb"
+        },
+       {
+            "pubspec_path": "/Users/lolo/development/project_contest/flutter_music_app_ui/pubspec.yaml",
+            "target":["content_scripts"],
+            "presentation":["winbox"],
+            "id":"flutter_music_app_ui",
+            "name":"Flutter Music App",
+            "info_links":[{"link":"https://www.youtube.com/watch?v=12ktVNkKw5w","title":"Youtube - Flutter UI Tutorial for Beginners"},
+            {"link":"https://github.com/maxonflutter/flutter_music_app_ui#/","title":"Flutter Music App UI - Github"}]
+        }]
+    
+}

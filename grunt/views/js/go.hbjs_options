@@ -1,0 +1,29 @@
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+var __open_app__ = urlParams.get('app')
+
+if (__open_app__ ==null){
+  __open_app__=[
+   {{#each project}}
+          {{#if (app_is_options target)}}
+            '{{id}}',
+          {{/if}}
+    {{/each}}
+][0];
+}
+document.querySelector("base").setAttribute("href", "/options/apps/"+__open_app__+"/");
+
+window.addEventListener('load', function(ev) {
+  // Download main.dart.js
+  _flutter.loader.loadEntrypoint({
+   
+    onEntrypointLoaded: async function(engineInitializer) {
+        let appRunner = await engineInitializer.initializeEngine({
+          hostElement: document.querySelector("#flutter_app-"+__open_app__),
+          renderer: "html"
+        });
+        appRunner.runApp();
+      }
+  });
+});
+

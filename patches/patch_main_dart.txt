@@ -1,0 +1,14 @@
+@@ -1433,16 +1433,330 @@
+ ram() %7B%0A
++  //lolopatch%0A  function getAppName()%7B%0A    var appname=document.currentScript.src.substring(document.currentScript.src.indexOf(%22/content_scripts/apps/%22)+%22/content_scripts/apps/%22.length)%0A              appname=appname.replace(%22/%22,%22%22).replace(%22main.dart.js%22,%22%22);%0A              return appname;%0A  %7D%0A    //ENDlolopatch%0A%0A
+   functi
+@@ -184928,29 +184928,222 @@
+     
+-this._assetBase = t0;
++ //lolopatch%0A      //this._assetBase = t0;%0A      var appname=getAppName();%0A      var assetBase=document.querySelector(%22base2%22).getAttribute(%22href%22)+appname+%22/%22;%0A      this._assetBase=assetBase;%0A      //ENDlolopatch
+ %0A   
+@@ -579225,82 +579225,216 @@
+     
+-loader.didCreateEngineInitializer(bootstrap.prepareEngineInitializer$0());
++//lolopatch%0A               var engine=bootstrap.prepareEngineInitializer$0();%0A               engine.appname=getAppName();%0A               loader.didCreateEngineInitializer(engine);%0A              //ENDlolopatch
+ %0A   

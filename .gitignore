@@ -1,0 +1,6 @@
+dist/**
+build/**
+grunt/node_modules/**
+grunt/.DS_Store
+config copy.json
+.DS_Store

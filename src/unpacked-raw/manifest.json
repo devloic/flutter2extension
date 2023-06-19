@@ -1,0 +1,38 @@
+{
+  "name": "Flutter to Extension",
+  "description": "Build an Extension .. from Flutter projects",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup/popup.html"
+    
+  },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+
+
+  "content_scripts":[{
+    "js":["content_scripts/js/go.js"
+    ], 
+     "matches": [ "<all_urls>" ],
+    "css":["content_scripts/css/all.css","content_scripts/css/modern.min.css"]
+  }],
+  "options_page": "options/options.html",
+  "web_accessible_resources": [
+    {
+     "resources": [ 
+    "content_scripts/*",
+    "content_scripts/*/*",
+    "content_scripts/*/*/*",
+    "content_scripts/*/*/*/*",
+    "content_scripts/*/*/*/*/*",
+    "content_scripts/*/*/*/*/*/*"
+      ],
+      "matches": [ "<all_urls>" ]
+    }]
+
+}

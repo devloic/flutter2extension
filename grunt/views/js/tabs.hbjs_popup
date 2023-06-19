@@ -1,0 +1,47 @@
+import '../../commons/flowbite/flowbite.js';
+
+
+var alltablinks=document.querySelectorAll('.tablink');
+
+  [].forEach.call(alltablinks, function(a) {
+    a.addEventListener('click', function() {
+        gotoTab(this);
+      });
+  });
+
+
+
+  function gotoTab(el) {
+    var target=el.id.replace("-tab", "");
+
+    el.href=chrome.runtime.getURL("/popup/popup.html?app="+target);;
+
+
+    return;
+  };
+
+// create an array of objects with the id, trigger element (eg. button), and the content element
+const tabElements = [
+    
+      {{#each project}}
+          {{#if (app_is_popup target)}}
+             {
+            id: '{{id}}',
+            triggerEl: document.querySelector('#{{id}}-tab'),
+            targetEl: document.querySelector('#{{id}}')
+          },
+          {{/if}}
+         {{/each}}
+    {
+        id: 'appresources',
+        triggerEl: document.querySelector('#appresources-tab'),
+        targetEl: document.querySelector('#appresources')
+    }
+];
+
+
+
+const tabs = new Tabs(tabElements);
+
+tabs.show(__open_app__);
+popup_tab.hbsbuild/popup/js/tabs.jsbuild/popup/js/tabs.js
