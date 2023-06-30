@@ -4,3 +4,7 @@ grunt/node_modules/**
 grunt/.DS_Store
 config copy.json
 .DS_Store
+config copy 2.json
+.gitignore
+config copy 4.json
+config copy 3.json
