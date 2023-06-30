@@ -24,7 +24,7 @@ jQuery('body').prepend(`
     <button type="button" id="sidebarCollapse"  class="btn btn-primary">
     </button>
 </div>
-<div id="flutter_app-`+app.id+`" style="width:280px;height:480px;margin:auto;margin-top:200px" >
+<div id="flutter_app-`+app.id+`" style="width:350px;height:480px;margin:auto;margin-top:10px" >
 
 </div>
 </nav>
@@ -59,7 +59,7 @@ jQuery('body').wrapInner(`
 }else{
 
     jQuery("#sidebar").append(`
-<div id="flutter_app-`+app.id+`" style="width:280px;height:480px;margin:auto;margin-top:200px" ></div>
+<div id="flutter_app-`+app.id+`" style="width:350px;height:480px;margin:auto;margin-top:10px" ></div>
     `);
 
 }
@@ -174,7 +174,7 @@ div.id="flutter_app-"+app.id;
 div.classList.add("flutter_app");
 //div.style.zIndex="10000000000000000";
 div.style.height="93%";
-div.style.width="100%";
+div.style.width="97%";
 div.style.border="0px solid";
 div.style.marginTop="35px";
 div.style.paddingLeft="5px";

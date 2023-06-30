@@ -24,7 +24,7 @@
           <ul id="myTab" data-tabs-toggle="#myTabContent" role="tablist" class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg shadow sm:flex dark:divide-gray-700 dark:text-gray-400">
 
              
-        {{#each project}}
+        {{#each projects}}
           {{#if (app_is_options target)}}
              <li class="w-full" role="presentation">
                   <a href="#" id="{{id}}-tab" data-tabs-target="#{{id}}" type="button" role="tab" aria-controls="{{id}}" aria-selected="false" class="tablink inline-block w-full p-4 text-gray-900 bg-gray-100 rounded-l-lg focus:ring-4 focus:ring-blue-300 active focus:outline-none dark:bg-gray-700 dark:text-white" >{{name}} </a>
@@ -38,7 +38,7 @@
     </ul>
 </div>
 <div id="myTabContent">
-      {{#each project}}
+      {{#each projects}}
       {{#if (app_is_options target)}}
       <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="{{id}}" role="tabpanel" aria-labelledby="{{id}}-tab">
       <div style="margin: auto;height: 700px;width: 700px;" id="flutter_app-{{id}}" ></div>
@@ -50,7 +50,7 @@
     <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="appresources" role="tabpanel" aria-labelledby="appresources-tab">
      
     </br></br>  
-     {{#each project}}
+     {{#each projects}}
         {{#if (app_is_options target)}}
               <h2 class="text-2xl font-bold text-gray-900 dark:text-white">{{name}}</h2>
               </br></br>  

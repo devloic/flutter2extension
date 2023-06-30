@@ -13,13 +13,13 @@ var injectors=await import(js_src);
   baseEl2.setAttribute("href",chrome.runtime.getURL("/content_scripts/apps/"));
   head.appendChild(baseEl2);
 
- {{#each project}}
+ {{#each projects}}
           {{#if (app_is_content_scripts target)}}
 add_{{id}}();
           {{/if}}
 {{/each}}
 
- {{#each project}}
+ {{#each projects}}
           {{#if (app_is_content_scripts target)}}
 function add_{{id}}() {
   var app={};

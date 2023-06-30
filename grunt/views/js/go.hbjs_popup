@@ -4,7 +4,7 @@ var __open_app__ = urlParams.get('app')
 
 if (__open_app__ ==null){
   __open_app__=[
-   {{#each project}}
+   {{#each projects}}
           {{#if (app_is_popup target)}}
             '{{id}}',
           {{/if}}

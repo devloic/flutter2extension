@@ -18,5 +18,8 @@
     "grunt-run": "^0.8.1",
     "grunt-text-replace": "^0.4.0",
     "grunt-uncss": "^0.10.1"
+  },
+  "dependencies": {
+    "simple-git": "^3.19.1"
   }
 }
