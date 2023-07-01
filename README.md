@@ -1,5 +1,10 @@
 # flutter2extension
 
+Check flutter2extension demo :  
+
+
+[![Flutter2extension on Youtube](http://img.youtube.com/vi/OWs5GaYO2FM/0.jpg)](http://www.youtube.com/watch?v=OWs5GaYO2FM "Flutter2extension")
+
 Package flutter apps in a browser extension (chrome)
 
 While adding a flutter web enabled app to a chrome extension is a relatively easy [process](https://medium.com/flutter-community/building-a-chrome-extension-using-flutter-aeb100a6d6c) , the tutorials on the web only achieve including them as a popup view.
