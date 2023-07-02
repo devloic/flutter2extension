@@ -3,6 +3,10 @@
 - bundle several web enabled flutter apps inside a browser extension, these apps get injected in webpages
 - define where the app will be showed : inside a sidebar or a window ( winbox) for content scripts, in options or popup ( you can have an app appear in all presentation targets )
 
+# Check the demo :  
+
+[![Flutter2extension on Youtube](http://img.youtube.com/vi/OWs5GaYO2FM/0.jpg)](http://www.youtube.com/watch?v=OWs5GaYO2FM "Flutter2extension")
+
 # Get started
 
 - clone flutter2extension : git clone https://github.com/devloic/flutter2extension
@@ -45,10 +49,7 @@ refresh some webpage, the Flutter app should show up
 flutter2extension is pretty stable but it will break many webpages (CSS collision) and some flutter apps might not work as expected (CORS), if that happens open a different webpage for testing. This will get fixed. Until flutter2extension gets more dynamic configuration settings don't consider it as a user-friendly tool. I am working on making it more suitable for every day user work. Consider it as an advanced proof of concept for now.
 
 
-# Check the demo :  
 
-
-[![Flutter2extension on Youtube](http://img.youtube.com/vi/OWs5GaYO2FM/0.jpg)](http://www.youtube.com/watch?v=OWs5GaYO2FM "Flutter2extension")
 
 
 
