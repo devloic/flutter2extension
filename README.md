@@ -1,9 +1,13 @@
-# flutter2extension
+# Features
+
+- bundle several web enabled flutter apps inside a browser extension
 
 Check flutter2extension demo :  
 
 
 [![Flutter2extension on Youtube](http://img.youtube.com/vi/OWs5GaYO2FM/0.jpg)](http://www.youtube.com/watch?v=OWs5GaYO2FM "Flutter2extension")
+
+
 
 Package flutter apps in a browser extension (chrome)
 
@@ -22,11 +26,18 @@ As a developer how many times did you watch a tutorial about an app on youtube, 
 
 On the google webstore we have one app <=> one extension. flutter2extension can bundle multiple flutter apps inside one extension. While flutter2extension is in early stage, it was already able to run several flutter apps side by side in a same webpage. Your browser becomes a personal local application server you control.
 
+# TODO Next
+- isolate apps and webpages to avoid CSS collisions
+- disable CORS when needed ( configurable)
+- generate a settings page for each app so you can dynamically add API keys (this avoids having to set it in the source code)
+- restrict apps to relevant pages in config.json
+- persist and override settings in your own appwrite instance
 
-Future challenges:
 
-- ~~bypass the  google "webstore" with a custom package manager so you can install apps in your browser like you would install a module with npm, a linux app with apt~~
-  => implemented pulling apps directly with git 
+# Future challenges:
+
+- bypass the  google "webstore" with a custom package manager so you can install apps in your browser like you would install a module with npm, a linux app with apt
+  => for now you can pull apps directly from git repos
 - embed apps made with other frameworks: react, vue, etc ...
 - speed app development through modular app design and interoperability between apps, think of apps as a service
 - since injecting code and content might break pages and pages structure might change we need apps that can dynamically configure themselves with configurations rated and shared by the user community
