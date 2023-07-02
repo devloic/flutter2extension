@@ -1,6 +1,7 @@
 # Features
 
-- bundle several web enabled flutter apps inside a browser extension
+- bundle several web enabled flutter apps inside a browser extension, these apps get injected in webpages
+- define
 
 Check flutter2extension demo :  
 
@@ -32,6 +33,7 @@ On the google webstore we have one app <=> one extension. flutter2extension can 
 - generate a settings page for each app so you can dynamically add API keys (this avoids having to set it in the source code)
 - restrict apps to relevant pages in config.json
 - persist and override settings in your own appwrite instance
+- dynamically change app embedding : move app from sidebar to winbox and vice versa
 
 
 # Future challenges:
