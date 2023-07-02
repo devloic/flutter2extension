@@ -1,9 +1,51 @@
 # Features
 
 - bundle several web enabled flutter apps inside a browser extension, these apps get injected in webpages
-- define
+- define where the app will be showed : inside a sidebar or a window ( winbox) for content scripts, in options or popup ( you can have an app appear in all presentation targets )
 
-Check flutter2extension demo :  
+# Get started
+
+- clone flutter2extension : git clone https://github.com/devloic/flutter2extension
+- edit config.json adding one or more apps
+  ```
+  {
+    "projects":
+        [{
+            "git":"https://github.com/Roaa94/flutter_airbnb_ui",
+            "pubspec_path": "",
+            "target":["content_scripts","options","popup"],
+            "presentation":["winbox"],
+            "id":"flutter_airbnb_ui",
+            "name":"flutter_airbnb_ui"
+        }
+        ]
+    
+}
+```
+set "git" if your source code is hosted on a git repository
+set "pubspec_path" if the app is in a directory : /Users/lolo/development/flutter_project/my_flutter_app/pubspec.yaml
+set "target" to specify where the app will show up , ex : ["content_scripts","popup"] if you want it to be injected in pages
+via content scripts and show as a popup when you click on the extension's icon
+set "presentation" ( only needed for  "content_scripts") : app will show in a "sidebar" or a "winbox" draggable window
+set "id" to a unique id ( mandatory)
+set "name" : label of your app that will appear in tabs, winbox title...
+
+if your Flutter app was not made for the web you can still try to add web support: flutter create --platforms web .  ( inside your flutter project)
+you can check if the Flutter app works on chrome with: flutter run -d chrome  (inside your flutter project)
+
+Once config.json is set:
+
+cd grunt
+grunt allin2
+
+your can find the unpacked browser extension in : ./flutter_to_browser_extension/dist/unpacked
+inside your chrome based browser go to extensions, set developer mode and click "Load unpacked" and select the flutter_to_browser_extension/dist/unpacked folder
+refresh some webpage, the Flutter app should show up
+
+flutter2extension is pretty stable but it will break many webpages (CSS collision) and some flutter apps might not work as expected (CORS), if that happens open a different webpage for testing. This will get fixed. Until flutter2extension gets more dynamic configuration settings don't consider it as a user-friendly tool. I am working on making it more suitable for every day user work. Consider it as an advanced proof of concept for now.
+
+
+# Check the demo :  
 
 
 [![Flutter2extension on Youtube](http://img.youtube.com/vi/OWs5GaYO2FM/0.jpg)](http://www.youtube.com/watch?v=OWs5GaYO2FM "Flutter2extension")
