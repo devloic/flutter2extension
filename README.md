@@ -27,7 +27,7 @@ set "pubspec_path" if the app is in a directory : /Users/lolo/development/flutte
 set "target" to specify where the app will show up , ex : ["content_scripts","popup"] if you want it to be injected in pages
 via content scripts and show as a popup when you click on the extension's icon
 set "presentation" ( only needed for  "content_scripts") : app will show in a "sidebar" or a "winbox" draggable window
-set "id" to a unique id ( mandatory)
+set "id" to a unique id ( mandatory, could be the name of your repo)
 set "name" : label of your app that will appear in tabs, winbox title...
 
 if your Flutter app was not made for the web you can still try to add web support: flutter create --platforms web .  ( inside your flutter project)
