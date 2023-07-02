@@ -1,7 +1,7 @@
 # Features
 
-- bundle several web enabled flutter apps inside a browser extension, these apps get injected in webpages
-- define where the app will be showed : inside a sidebar or a window ( winbox) for content scripts, in options or popup ( you can have an app appear in all presentation targets )
+- bundle several web enabled Flutter apps inside a browser extension, these apps get injected in webpages
+- define where the app will be shown : inside a sidebar or a window ( winbox) for content scripts, in options or popup ( you can have an app appear in all presentation targets )
 
 # Check the demo :  
 
