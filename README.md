@@ -9,6 +9,7 @@
 
 # Get started
 
+- install npm ( https://docs.npmjs.com/downloading-and-installing-node-js-and-npm )
 - clone flutter2extension : git clone https://github.com/devloic/flutter2extension
 - edit config.json adding one or more apps
   ```
@@ -40,6 +41,7 @@ you can check if the Flutter app works on chrome with: flutter run -d chrome  (i
 Once config.json is set:
 
 cd grunt
+npm install
 grunt allin2
 
 your can find the unpacked browser extension in : ./flutter_to_browser_extension/dist/unpacked
