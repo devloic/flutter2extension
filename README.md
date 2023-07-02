@@ -25,7 +25,8 @@ On the google webstore we have one app <=> one extension. flutter2extension can 
 
 Future challenges:
 
-- bypass the  google "webstore" with a custom package manager so you can install apps in your browser like you would install a module with npm, a linux app with apt 
+- ~~bypass the  google "webstore" with a custom package manager so you can install apps in your browser like you would install a module with npm, a linux app with apt~~
+  => implemented pulling apps directly with git 
 - embed apps made with other frameworks: react, vue, etc ...
 - speed app development through modular app design and interoperability between apps, think of apps as a service
 - since injecting code and content might break pages and pages structure might change we need apps that can dynamically configure themselves with configurations rated and shared by the user community
