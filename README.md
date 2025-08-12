@@ -4,10 +4,11 @@ New version with wasm support for Flutter (Channel beta, 3.35.0-0.3.pre)
 All made with AI, I don't know what is inside nor did I read the generated doc.
 
 usage example (choose between shell script or node script):
+```
 ./build-extension.js --output my-extension --wasm --content_scripts
 ./build-extension.js --output my-extension --web --popup
 ./build-extension.sh --output "my-extension-wasm-cs" --name "My App" --version "1.0.0" --content_scripts --wasm
-
+```
 
 Out of curiosity I decided to make claude code rewrite this old tool I made 2 years ago. 
 Results are impressive. 2 weeks of work reduced to one day by claude code (with Max plan)
