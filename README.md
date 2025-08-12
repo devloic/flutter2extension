@@ -14,7 +14,7 @@ Out of curiosity I decided to make claude code rewrite this old tool I made 2 ye
 Results are impressive. 2 weeks of work reduced to one day by claude code (with Max plan)
 The "development" process becomes more like : prompt/test/give feedback. 80 % of the project
 was accomplished in the first 2 hours. The last miles is were you still encounter the devil.
-When hittinh some tough problems there still is this feeling of "will claude make it or will i have
+When hitting some tough problems there still is this feeling of "will claude make it or will i have
 to use my brain for a second and dive in its code? Should i keep prompting as if it was a slot 
 machine ?"  With gemini cli at least you knew when the bullshit cycle started so you could stop
 iterating. But Claude gives you some good reasons and confidence to put another coin in the slot 
@@ -45,9 +45,9 @@ way of building. I almost stopped googling. I was not so confident at the early 
 hallucinations created a lot of frustration. This time is gone though while it still happens from time
 to time, but you can somehow "feel" the bluff of the AI. Actually that's when i start googling again.
 
-Will the Ai become really creative, will we become dummer because of AI? I dont know if an AI could
+Will the Ai become really creative, will we become dumber because of AI? I dont know if an AI could
 reinvent relativity but it can help us reinventing it if we tell her that time is not such a constant
-thing. Will we become dummer? I really thought so at a while ago but once you realize that you can
+thing. Will we become dumber? I really thought so at a while ago but once you realize that you can
 actually build things you never thought you could do it opens so many doors and you start learning
 a lot doing things.  Did I just call her "her" ?
 
